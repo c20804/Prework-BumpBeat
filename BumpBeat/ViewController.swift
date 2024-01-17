@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             sender.setTitle("Stop", for: .normal)
             kickButton.isEnabled = true
             messageLabel.isHidden = true
-            self.view.backgroundColor = #colorLiteral(red: 0.5781865716, green: 0.7258599997, blue: 0.8131495118, alpha: 1)
+            changeBackgroundColor()
         } else if sender.titleLabel?.text == "Stop" {
             timer?.invalidate()
             sender.setTitle("Restart", for: .normal)
@@ -45,11 +45,11 @@ class ViewController: UIViewController {
             if count > 10{
                 let message = "Great! Baby is active!"
                 showMessage(with: message)
-                self.view.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+                changeBackgroundColor()
             } else {
                 let message = "Observation is suggested.\nAim for at least 10 kicks\nwithin a 2-hour period."
                 showMessage(with: message)
-                self.view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+                changeBackgroundColor()
             }
             
         }
@@ -69,6 +69,14 @@ class ViewController: UIViewController {
         let minutes = (elapsedTime / 60) % 60
         let hours = elapsedTime / 3600
         timerLabel.text = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+    }
+    
+    func changeBackgroundColor() {
+        let red = CGFloat.random(in: 0.7...1)
+        let green = CGFloat.random(in: 0.7...1)
+        let blue = CGFloat.random(in: 0.7...1)
+        
+        self.view.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 0.5)
     }
     
     @IBAction func kickPressed(_ sender: UIButton) {
