@@ -25,15 +25,19 @@ The following **required** functionality is completed:
 
 
 ## App Brainstorming (Step 4)
-Favorite Apps:
-    1. Goodnotes
-        - Multi-platform synchronization of notes
-        - Rich text formatting for notes
-    2. Spotify
-        - Personalized playlists based on listening history
-        - Collaborative playlists with friends
-App Idea:
-    A comprehensive health and wellness app designed to empower users to take control of their well-being that aims to create a holistic approach to health management, making it easier for individuals to achieve and maintain their health goals. Features include interactive workout videos, nutrition planning, and a community forum for users to share their health journey.
+### Favorite Apps:
+
+1. **Goodnotes**
+    - Multi-platform synchronization of notes
+    - Rich text formatting for notes
+
+2. **Spotify**
+    - Personalized playlists based on listening history
+    - Collaborative playlists with friends
+
+### App Idea:
+
+A comprehensive health and wellness app designed to empower users to take control of their well-being that aims to create a holistic approach to health management, making it easier for individuals to achieve and maintain their health goals. Features include interactive workout videos, nutrition planning, and a community forum for users to share their health journey.
 
 ## Notes
 
